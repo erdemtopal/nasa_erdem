@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  weight: 1
+  firstlocation: MyString
+  secondlocation: MyString
+  fuel: 1
+  error: MyString
+
+two:
+  name: MyString
+  weight: 1
+  firstlocation: MyString
+  secondlocation: MyString
+  fuel: 1
+  error: MyString

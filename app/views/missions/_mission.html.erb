@@ -1,0 +1,42 @@
+<div id="<%= dom_id mission %>">
+  <blockquote>
+    <p>
+      <strong>Mission Name:</strong>
+      <%= link_to mission.name, mission %>
+    </p>
+
+    <p>
+      <strong>Equipment Weight:</strong>
+      <%= mission.weight %>
+    </p>
+
+    <p>
+      <strong>First location:</strong>
+      <%= mission.firstlocation %>
+    </p>
+
+    <p>
+      
+      <%if mission.secondlocation != "We don't have second location"%>
+      <strong>Secondlocation:</strong>
+          <%= mission.secondlocation %>
+      <% end %>
+    </p>
+
+    <p>
+      <strong>Required Fuel:</strong>
+      <%= mission.fuel %>
+    </p>
+
+    <p>
+      <strong>Summary of the mission: </strong>
+      Mission started.
+      Your ship launched from earth. It landed on the <%= mission.firstlocation %>. It launched from <%= mission.firstlocation %>. 
+      <%if mission.secondlocation != "We don't have second location"%>
+        It landed on the <%= mission.secondlocation %>. It launched from <%= mission.secondlocation %>. 
+      <% end %>
+      Finally it landed on the our beautiful earth. You need <strong><%= mission.fuel%></strong> fuel for the mission. 
+    </p>
+  </blockquote>
+
+</div>

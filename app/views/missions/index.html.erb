@@ -1,0 +1,12 @@
+
+<p style="background: green"><%= notice %></p>
+<strong><%= link_to "Calculate New Mission", new_mission_path %></strong>
+
+<div id="missions">
+  <% @missions.each do |mission| %>
+    <%= render mission %>
+    <hr/>
+  <% end %>
+</div>
+
+
